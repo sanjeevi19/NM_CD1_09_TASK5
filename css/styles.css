@@ -1,0 +1,576 @@
+@font-face {
+    font-family: Comfortaa;
+    src : url(../fonts/Comfortaa.ttf);
+}
+@font-face {
+    font-family: Lato;
+    src : url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: LatoLight;
+    src : url(../fonts/Lato/Lato-Light.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+}
+
+.category{
+    font-family: Comfortaa;
+    font-size: 8px;
+    color: #E85A4F;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+/* NAVBAR START */
+.section-1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/homepage-img/green-bg.jpg);
+    background-size: 75% 100%;
+    background-repeat: no-repeat;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.left-nav{ /* left side of nav -- logo and categories */
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+}
+
+.left-nav .logo a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left-nav h2 a{
+    color: #E85A4F;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    font-family: comfortaa;
+    color: #EFF4F0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: lighter;
+    transition: 1s;
+}
+
+nav ul li a:hover{
+    color: #E85A4F;
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.right-nav button{ /* right side of nav -- icons*/
+    color:#09282A;
+    border: 0.5px solid #09282A;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 90px;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+
+.login:hover{
+    color:#ffffff;
+    border: 1px solid #09282A;
+    background-color:#09282A;  
+}
+
+/* NAVBAR END */
+
+
+/* CONTENT START */
+.intro-container{
+    display: flex;
+    margin-top: 4%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.intro-content{
+    flex: 10;
+    margin-right: 35px;
+    margin-top: 35px;
+}
+
+.intro-container .intro-content h1{
+    font-weight: 800;
+    color: #EFF4F0;
+    font-size: 70px;
+}
+
+.intro-container .intro-content p{
+    color: #EFF4F0;
+    font-size: 18px;
+    margin-top: 25px;
+    line-height: 1.35;
+    font-family: LatoLight;
+}
+
+.btn{
+    font-family: Lato;
+    background-color: #E85A4F;
+    display: inline-block;
+    border: none;
+    border-radius: 25px;
+    padding: 13px 115px;
+    margin: 35px 2px;
+    font-size: 14px;
+    color: #202020;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover{
+    background-color: rgba(255,255,255,0);
+    color: #E85A4F;
+    border: 1px solid #E85A4F;
+}
+
+.intro-img{
+    flex: 90;
+}
+
+.intro-img img{
+    border-radius: 30px;
+}
+/* CONTENT END */
+
+/* SECTION 2 - TRENDING THIS WEEK */
+.section-2{
+    height: 950px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-2 h1{
+    font-size: 32px;
+    margin-top: 150px;
+    padding-bottom: 30px;
+}
+
+.image1{
+    display: flex;
+    gap: 20px;
+}
+
+.image1 img{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.image1 img:hover{
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.2);
+    filter: brightness(80%);   
+}
+
+.image-sub-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.image-sub-container img{
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.image-sub-container img:hover{
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.2);
+}
+
+
+/* SECTION 3 - MINDFUL LIVING */
+.section-3{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #EFF4F0;
+}
+
+.section-3 .section-3-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3 .header{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.section-3 .header p{
+    font-size: 13px;
+    color: #E85A4F;
+}
+
+.section-3 .header h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-section .card img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.content-section .card img:hover{
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.2);
+}
+
+.content-section a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.content-section .card p:nth-child(2){
+    font-size: 13.5px;
+    margin-top: 20px;
+}
+
+.content-section .card{
+    flex: 1;
+    margin: 20px 20px;
+}
+
+.btn-read{
+    font-family: Lato;
+    background-color: #082E21;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 50px;
+    margin: 35px 2px;
+    font-size: 10px;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-read:hover{
+    background-color: rgba(255,255,255,0);
+    color: #082E21;
+    border: 1px solid #082E21;
+}
+
+/* SECTION 4 - HOME DECOR */
+.section-4{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #FFFFFF;
+}
+
+.section-4 .section-4-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 .header{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 60px;
+}
+
+.section-4 .header p{
+    font-size: 13px;
+    color: #E85A4F;
+}
+
+.section-4 .header h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-4.content-section .card img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.content-section .card p{
+    font-size: 13.5px;
+    margin-top: 20px;
+}
+
+.content-section .card{
+    flex: 1;
+    margin: 20px 20px;
+}
+
+.btn-read{
+    font-family: Lato;
+    background-color: #082E21;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 50px;
+    margin: 35px 2px;
+    font-size: 10px;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-read:hover{
+    background-color: rgba(255,255,255,0);
+    color: #082E21;
+    border: 1px solid #082E21;
+}
+
+/* SECTION 5 - FASHION */
+.section-5{
+    height: 115vh;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.section-5 .section-5-container{
+    position: relative;
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.section-5 img{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 550px;
+    height: 550px;
+    border-radius: 30px;
+}
+
+.section-5 .right-content{
+    position: absolute;
+    bottom: 250px;
+    right: 0;
+    width: 900px;
+    height: 550px;
+    background-color: #09282A;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.section-5 .sub-content{
+    position: absolute;
+    text-align: left;
+    color: #EFF4F0;
+    width: 400px;
+    height: 200px;
+    right: 150px;
+    bottom: 250px;
+}
+
+.sub-content p:first-child{
+    font-size: 13px;
+    color: #E85A4F;
+}
+
+.sub-content h1{
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.sub-content p:nth-child(3){
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.sub-content p:nth-child(4){
+    font-size: 13px;
+    color: #778082;
+    line-height: 140%;
+}
+
+.sub-content .category{
+    font-size: 11px;
+    color: #E85A4F;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-fashion{
+    font-family: Lato;
+    background-color: rgba(255,255,255,0);
+    border: 0.5px solid #ffffff;
+    border-radius: 25px;
+    padding: 10px 50px;
+    margin: 35px 2px;
+    font-size: 10px;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-fashion:hover{
+    background-color: #ffffff;
+    color: #09282A;
+}
+
+/* FOOTER */
+.Footer{
+    height: 336px;
+    width: 100%;
+    
+}
+.Footer-content{
+    padding-top: 56px;
+    padding-left: 200px;
+}
+.Footer-content h1{
+    font-size:24px;
+    color:white;
+    padding-bottom: 31px;
+}
+.Footer-content h2{
+    font-size: 13.5px;
+    color:white;
+}
+
+.Footer-subs{
+    display: flex;
+    gap: 9px;
+    padding-top: 26px;
+}
+.Footer-content input{
+   width: 381.44px;
+   height: 41px;
+   background: transparent;
+   border: white;
+   outline: white solid 1px;
+   border-radius: 30px;
+   color: white;
+}
+.Footer-content ::placeholder{
+    padding-left: 20px;
+}
+
+.Footer-content button{
+    height: 41px;
+    width: 69px;
+    background: transparent;
+    border: white;
+    outline: white solid 1px;
+    border-radius: 30px;
+}
+.Footer-content button{
+    text-align: center;
+    color: white;
+}
+
+.Footer-foot{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 61px;
+    color: #E85A4F;
+}
+.Footer-foot span{
+    font-size:14px
+}
+.Footer-foot p{
+    font-size:18px
+}
+
+.footer-nav a{
+    outline: none;
+    color: #E85A4F;
+    text-decoration: none;
+}
+.footer-nav li{
+    list-style-type: none;
+    font-size: 14px; 
+}
+.footer-nav ul{
+    display:flex;
+    gap: 10px;
+}
+
+#messageBoxFooter{
+    display: none;
+    color: #E85A4F;
+    font-style: italic;
+}
+
+
